@@ -4,7 +4,6 @@
 
 **Logo** | Home | Mission | Impact | Stories | Gallery | Donate
 
-**Button:** Donate Now
 
 ---
 
@@ -53,9 +52,9 @@ Thousands of water projects have been funded in communities around the world.
 
 *Impact Statistics Cards*
 
-* Communities Served
-* Water Projects Funded
-* People Reached
+* Communities Served - 29 countries
+* Water Projects Funded - 209,000
+* People Reached - 21 million people
 
 ---
 
