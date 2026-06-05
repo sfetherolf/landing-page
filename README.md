@@ -1,103 +1,149 @@
 # 🌊 Charity: Water Landing Page
 
-**Color Palette**
+## Navigation Bar
 
-* Charity Yellow: #FFC907
-* Dark Gray: #2E2E2E
-* Light Blue: #77A8BB
-* White: #FFFFFF
+**Logo** | Home | Mission | Impact | Stories | Gallery | Donate
+
+**Button:** Donate Now
 
 ---
 
-# HERO SECTION
+# HOME
 
 ## Clean Water Changes Everything
 
-Millions of people around the world still lack access to clean and safe drinking water. Together, we can help provide sustainable water solutions that improve health, education, and opportunity.
+Millions of people around the world still lack access to clean and safe drinking water. Access to clean water improves health, education, and economic opportunities for entire communities.
 
 ### [ Donate Now ]
 
-*Hero Image: Use a Charity: Water photo showing a community benefiting from clean water access.*
+*Hero Image: Charity: Water community water project photo*
 
 ---
 
-# OUR MISSION
+# MISSION
 
-## Bringing Clean Water to Communities in Need
+## Our Mission
 
-Charity: Water is a nonprofit organization dedicated to providing clean and safe drinking water to people living in developing countries. Through community-led and sustainable water projects, the organization works to create lasting impact for families around the world.
+Charity: Water is a nonprofit organization dedicated to bringing clean and safe drinking water to people in developing countries. Through sustainable water projects and transparent reporting, the organization helps communities gain access to one of life's most basic necessities.
 
----
+### Core Values
 
-# WHY CLEAN WATER MATTERS
-
-## More Than Just Water
-
-### Health
-
-Access to clean water helps prevent waterborne diseases and improves overall community health.
-
-### Education
-
-Children spend less time collecting water and more time in school.
-
-### Opportunity
-
-Reliable water sources allow communities to invest time in work, agriculture, and economic growth.
+* Transparency
+* Sustainability
+* Community Partnership
+* Global Impact
 
 ---
 
-# IMPACT SECTION
+# IMPACT
 
-## Every Donation Makes a Difference
+## Making a Difference
 
-* 100% of public donations fund water projects.
-* Sustainable solutions are built to serve communities long-term.
-* Project locations and results are shared transparently with supporters.
+### 100% Model
 
-*Impact Photo: Community members using a newly installed clean water source.*
+100% of public donations directly fund clean water projects.
+
+### Sustainable Solutions
+
+Projects are designed to provide long-term access to safe drinking water.
+
+### Global Reach
+
+Thousands of water projects have been funded in communities around the world.
+
+*Impact Statistics Cards*
+
+* Communities Served
+* Water Projects Funded
+* People Reached
+
+---
+
+# STORIES
+
+## Stories of Change
+
+### Better Health
+
+Access to clean water reduces the spread of waterborne diseases.
+
+### Better Education
+
+Children spend less time collecting water and more time learning.
+
+### Better Opportunities
+
+Communities can focus on economic growth and development.
+
+*Featured Story Image and Testimonial*
 
 ---
 
 # GALLERY
 
-## Real Stories. Real Change.
+## See the Impact
 
-Include 3-4 Charity: Water images showing:
+Display a gallery of Charity: Water photography featuring:
 
-* Families collecting clean water
-* Children attending school
 * Community water systems
+* Families collecting clean water
+* Children benefiting from water access
 * Volunteers and local partners
 
 ---
 
-# CALL TO ACTION
+# DONATE
 
-## Be Part of the Solution
+## Help Bring Clean Water to More Communities
 
-Access to clean water transforms lives. Support projects that bring safe drinking water to communities around the world.
+Every donation supports sustainable clean water projects that create lasting change.
+
+### Donation Options
+
+* $25
+* $50
+* $100
+* Custom Amount
 
 ### [ Give Clean Water Today ]
-
-Every contribution helps fund sustainable water solutions and creates opportunities for healthier, stronger communities.
 
 ---
 
 # FOOTER
 
-### Charity: Water
-
-Learn more about the global water crisis and how clean water can change lives.
-
-Navigation:
+### Quick Links
 
 * Home
 * Mission
 * Impact
+* Stories
 * Gallery
 * Donate
 
+### Contact
+
+Follow Charity: Water on social media for updates and project stories.
+
 © 2026 Charity: Water Landing Page Project
+
+---
+
+## Brand Colors
+
+### Primary Colors
+
+* Charity Yellow: #FFC907
+* White: #FFFFFF
+
+### Secondary Colors
+
+* Light Blue: #77A8BB
+* Dark Gray: #2E2E2E
+
+### Suggested Fonts
+
+* Proxima Nova (Brand Font)
+* Arial (Fallback)
+* Sans-serif
 
 
