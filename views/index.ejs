@@ -1,26 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Haikus for Mona</title>
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Haikus for Mona">
-    <meta property="og:description" content="Some of the best haikus you'll ever read about our rescue dog June">
-    <meta property="og:image" content="/images/sunlight.jpg">
+    <title>Charity Water Landing Page</title>
+    <meta property="og:title" content="Charity Water" />
+    <meta property="og:description" content="Join the mission to bring safe, clean drinking water to communities around the world." />
+    <meta property="og:image" content="/images/charitywater/charity-navigator-Caxpe_EG.jpg" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Haikus for Mona</h1>
-    <div>
-      <% for(var i=0; i < haikus.length; i++) { %>
-        <img
-          class="mona-images"
-          src="images/<%= haikus[i].image %>" />
-        <div 
-          class="haiku-containers">
-          <p 
-            class="haikus"
-          ><%- haikus[i].text %></p>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">Charity Water</div>
+        <nav class="nav-links">
+          <a href="#mission">Mission</a>
+          <a href="#impact">Impact</a>
+          <a href="#projects">Projects</a>
+        </nav>
+        <a class="button button-primary" href="#donate">Donate</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Clean water changes everything</span>
+            <h1>Bring safe drinking water to communities in need.</h1>
+            <p>
+              Every donation helps build wells, filters, and sustainable systems that transform lives.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#donate">Donate Now</a>
+              <a class="button button-secondary" href="#impact">See Impact</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img class="hero-image" src="/images/charitywater/candid-DD7EBozV.jpg" alt="Community enjoying fresh water" />
+          </div>
         </div>
-      <% } %>
-    </div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="container">
+          <h2>Stories from the field</h2>
+          <div class="gallery-grid">
+            <div class="gallery-card">
+              <img src="/images/charitywater/charity-navigator-Caxpe_EG.jpg" alt="Charity Water field worker" />
+              <p>Field teams delivering sustainable clean water solutions.</p>
+            </div>
+            <div class="gallery-card">
+              <img src="/images/charitywater/candid-DD7EBozV.jpg" alt="Community enjoying fresh water" />
+              <p>Communities gaining access to fresh drinking water.</p>
+            </div>
+            <div class="gallery-card">
+              <img src="/images/charitywater/charity-watch-BDZG6xjJ.jpg" alt="Tracking water project progress" />
+              <p>Transparent project tracking with real-time updates.</p>
+            </div>
+            <div class="gallery-card">
+              <img src="/images/charitywater/bbb-BCol5qPK.jpg" alt="Support clean water impact" />
+              <p>Support that powers long-term water access and health.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission" class="section mission-section">
+        <div class="container section-grid">
+          <div>
+            <h2>Our Mission</h2>
+            <p>
+              Charity Water supports clean water projects in communities that need them most. We focus on long-term sustainability, local partnerships, and measurable outcomes.
+            </p>
+          </div>
+          <div class="mission-cards">
+            <div class="card">
+              <h3>Community-led</h3>
+              <p>Every project is guided by local leaders to ensure lasting success.</p>
+            </div>
+            <div class="card">
+              <h3>Transparency</h3>
+              <p>Follow each project from funding to completion with clear reporting.</p>
+            </div>
+            <div class="card">
+              <h3>Impact-driven</h3>
+              <p>Safe water improves health, education, and economic opportunity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="section impact-section">
+        <div class="container">
+          <h2>Impact by the numbers</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <strong>5M+</strong>
+              <span>People served</span>
+            </div>
+            <div class="stat-card">
+              <strong>2,500+</strong>
+              <span>Projects completed</span>
+            </div>
+            <div class="stat-card">
+              <strong>100%</strong>
+              <span>Donor funding goes to water</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <h2>How it works</h2>
+          <div class="project-steps">
+            <div class="step">
+              <h3>1. Support a project</h3>
+              <p>Choose a campaign and make a gift that goes directly to clean water solutions.</p>
+            </div>
+            <div class="step">
+              <h3>2. Track progress</h3>
+              <p>Get updates and see where your donations fund real wells and filters.</p>
+            </div>
+            <div class="step">
+              <h3>3. Celebrate change</h3>
+              <p>Watch communities gain health, dignity, and a brighter future.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="donate" class="section donate-section">
+        <div class="container donate-card">
+          <h2>Ready to make a difference?</h2>
+          <p>Give today and help deliver clean water for families, schools, and villages around the world.</p>
+          <a class="button button-primary" href="#">Give Now</a>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container cta-card">
+          <div class="cta-copy">
+            <h2>Take action today</h2>
+            <p>Join our community — get updates on projects and opportunities to help.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary button-xl" href="#donate">Donate Now</a>
+            <a class="button button-secondary button-xl" href="#subscribe">Join Updates</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe" class="section subscribe-section">
+        <div class="container">
+          <% if (typeof subscribed !== 'undefined' && subscribed == '1') { %>
+            <div class="subscribe-message success">Thanks — you're subscribed! Check your inbox for updates.</div>
+          <% } else if (typeof subscribed !== 'undefined' && subscribed == '0') { %>
+            <div class="subscribe-message error">Please enter a valid email address and try again.</div>
+          <% } %>
+
+          <form class="subscribe-form" action="/subscribe" method="POST">
+            <div class="form-row">
+              <input id="email" name="email" type="email" placeholder="Your email address" required />
+              <button class="button button-primary" type="submit">Join Updates</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Charity Water. Built with purpose.</span>
+      </div>
+    </footer>
+  </body>
 </html>

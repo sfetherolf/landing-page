@@ -1,6 +1,23 @@
 
-# Haikus for Codespaces
+# Charity Water Landing Page
 
-This is a quick node project template for demoing Codespaces. It is based on the [Azure node sample](https://github.com/Azure-Samples/nodejs-docs-hello-world). It's great!!!
+A simple Express + EJS landing page built to showcase a charity water fundraising campaign.
 
-Point your browser to [Quickstart for GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started/quickstart) for a tour of using Codespaces with this repo.
+## Run locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the app:
+   ```bash
+   npm start
+   ```
+3. Open `http://localhost:3000` in your browser.
+
+## Project structure
+
+- `index.js` — Express server and route configuration
+- `views/index.ejs` — landing page template
+- `public/css/main.css` — page styles
+- `public/images/` — static images served by the site
