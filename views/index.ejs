@@ -1,203 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>charity: water | Clean water changes everything</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">charity: water</div>
+    <div class="nav-group">
+      <a class="nav-link" href="#subscribe">Get Updates</a>
+      <a class="nav-btn" href="#donate">Donate Now</a>
+    </div>
+  </nav>
 
-Charity: Water - Every Drop Changes Lives
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Clean water changes everything</p>
+      <h1>Every drop brings hope to communities around the world</h1>
+      <p>charity: water raises funds to provide clean and safe drinking water to people in developing countries through sustainable, community-led water projects.</p>
+      <a class="hero-btn" href="#donate">Give Water Today</a>
+    </div>
+  </header>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  <% if (subscribed === '1') { %>
+    <div class="alert success">Thank you! You’re now signed up for water project updates.</div>
+  <% } else if (subscribed === '0') { %>
+    <div class="alert error">Please enter a valid email address to receive updates.</div>
+  <% } %>
 
-body{
-    line-height:1.6;
-    color:#1a1a1a;
-}
+  <section class="section mission-section">
+    <h2>Our Mission</h2>
+    <div class="mission">
+      <p>We exist to bring clean and safe drinking water to every person on the planet. Every gift funds real, lasting water solutions in communities that need them most.</p>
+    </div>
+    <div class="mission-cards">
+      <article class="mission-card">
+        <h3>People Served</h3>
+        <p>703 million people still lack access to clean water. Your support helps provide wells, rain catchment, and spring protections.</p>
+      </article>
+      <article class="mission-card">
+        <h3>Sustainable Change</h3>
+        <p>We partner with local leaders to build water systems that communities own, maintain, and protect for years to come.</p>
+      </article>
+      <article class="mission-card">
+        <h3>100% Directed</h3>
+        <p>Public donations go directly to water projects, while separate supporters cover our operating expenses.</p>
+      </article>
+    </div>
+  </section>
 
-/* Navigation */
-nav{
-    background:#ffffff;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+  <section class="section gallery-section">
+    <h2>Stories from the Field</h2>
+    <div class="gallery">
+      <img src="/images/charitywater/charity-watch-BDZG6xjJ.jpg" alt="People around a clean water source">
+      <img src="/images/charitywater/candid-DD7EBozV.jpg" alt="Children holding water containers">
+      <img src="/images/charitywater/charity-navigator-Caxpe_EG.jpg" alt="Volunteers working with a community">
+      <img src="/images/charitywater/bbb-BCol5qPK.jpg" alt="Fresh water infrastructure in a village">
+    </div>
+  </section>
 
-.logo{
-    font-size:1.8rem;
-    font-weight:bold;
-    color:#003366;
-}
+  <section class="stats">
+    <div class="stats-container">
+      <div class="stat">
+        <h3>703M</h3>
+        <p>People still need access to clean drinking water.</p>
+      </div>
+      <div class="stat">
+        <h3>100%</h3>
+        <p>Public donations fund water projects.</p>
+      </div>
+      <div class="stat">
+        <h3>29</h3>
+        <p>Years of delivering clean water around the globe.</p>
+      </div>
+    </div>
+  </section>
 
-.nav-btn{
-    background:#FFC907;
-    color:#000;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
+  <section class="section subscribe-section" id="subscribe">
+    <h2>Stay connected</h2>
+    <p>Get stories, campaign updates, and volunteer opportunities delivered to your inbox.</p>
+    <form class="subscribe-form" action="/subscribe" method="post">
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <button type="submit" class="hero-btn">Subscribe</button>
+    </form>
+  </section>
 
-/* Hero Section */
-.hero{
-    background:linear-gradient(rgba(0,51,102,.75),rgba(0,51,102,.75)),
-    url('https://images.unsplash.com/photo-1542810634-71277d95dcbb');
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:120px 8%;
-}
+  <section class="cta" id="donate">
+    <h2>Join the movement for clean water</h2>
+    <p>Your gift helps build wells, train communities, and keep water flowing for years to come.</p>
+    <a class="cta-btn" href="https://www.charitywater.org/donate" target="_blank" rel="noopener">Donate to charity: water</a>
+  </section>
 
-.hero h1{
-    font-size:3.5rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:1.2rem;
-    margin-bottom:30px;
-}
-
-.hero-btn{
-    display:inline-block;
-    background:#FFC907;
-    color:#000;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-    font-size:1.1rem;
-}
-
-/* Mission Section */
-.section{
-    padding:80px 8%;
-}
-
-.section h2{
-    text-align:center;
-    color:#003366;
-    margin-bottom:30px;
-    font-size:2.5rem;
-}
-
-.mission{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-    font-size:1.1rem;
-}
-
-/* Stats */
-.stats{
-    background:#FFC907;
-    padding:80px 8%;
-}
-
-.stats-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    text-align:center;
-}
-
-.stat h3{
-    font-size:3rem;
-    color:#003366;
-}
-
-.stat p{
-    font-weight:bold;
-}
-
-/* Gallery */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.gallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-/* Call To Action */
-.cta{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:100px 8%;
-}
-
-.cta h2{
-    color:white;
-    margin-bottom:20px;
-}
-
-.cta-btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#FFC907;
-    color:black;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-/* Footer */
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-@media(max-width:768px){
-    .hero h1{
-        font-size:2.5rem;
-    }
-}
-
-    charity: water
-
-    [Donate](#)
-
-    Clean Water Changes Everything
-    
-        703 million people still live without access to clean and safe drinking water.
-        Together, we can change that.
-    
-
-    [Make an Impact](#)
-
-    Why Water Matters
-    
-        Access to clean water improves health, education, and economic opportunity.
-        Every donation helps fund sustainable water projects in communities around the world.
-    
-
-    
-        
-            703M
-            People Need Clean Water
-
-        
-
-        
-            100%
-            Public Donations Fund Projects
-
-        
-
-        
-            29
+  <footer>
+    <p>charity: water | Empowering communities with access to clean water.</p>
+  </footer>
+</body>
+</html>
             Countries Served
 
         
