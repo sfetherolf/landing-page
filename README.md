@@ -1,245 +1,50 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charity: Water - Every Drop Changes Lives</title>
+# Charity: Water Landing Page
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+## Overview
 
-body{
-    line-height:1.6;
-    color:#1a1a1a;
-}
+This landing page was designed to support Charity: Water and its mission to bring clean and safe drinking water to people around the world. The page uses powerful storytelling, impactful photography, and clear calls to action to educate visitors about the global water crisis and encourage them to make a difference.
 
-/* Navigation */
-nav{
-    background:#ffffff;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+## Mission Statement
 
-.logo{
-    font-size:1.8rem;
-    font-weight:bold;
-    color:#003366;
-}
+Charity: Water is a nonprofit organization dedicated to bringing clean and safe drinking water to people in developing countries. The organization believes that access to clean water changes everything, including health, education, economic opportunity, and quality of life.
 
-.nav-btn{
-    background:#FFC907;
-    color:#000;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
+## Photography
 
-/* Hero Section */
-.hero{
-    background:linear-gradient(rgba(0,51,102,.75),rgba(0,51,102,.75)),
-    url('https://images.unsplash.com/photo-1542810634-71277d95dcbb');
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:120px 8%;
-}
+This landing page incorporates photography provided through Charity: Water's visual resources. These images were selected because they authentically represent the communities impacted by water scarcity and demonstrate the life-changing effects of access to clean water. The photographs help create an emotional connection with visitors while reinforcing the organization's mission and impact.
 
-.hero h1{
-    font-size:3.5rem;
-    margin-bottom:20px;
-}
+## Features
 
-.hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:1.2rem;
-    margin-bottom:30px;
-}
+* Engaging hero section featuring Charity: Water photography
+* Mission-focused messaging
+* Information about the global water crisis
+* Responsive design for desktop and mobile devices
+* Brand-aligned colors and typography
+* Donation-focused call-to-action buttons
 
-.hero-btn{
-    display:inline-block;
-    background:#FFC907;
-    color:#000;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-    font-size:1.1rem;
-}
+## Call to Action
 
-/* Mission Section */
-.section{
-    padding:80px 8%;
-}
+Every person deserves access to clean water. By supporting Charity: Water, you can help provide safe drinking water to families and communities in need. Whether through a one-time donation, monthly giving, or sharing the mission with others, your contribution can create lasting change.
 
-.section h2{
-    text-align:center;
-    color:#003366;
-    margin-bottom:30px;
-    font-size:2.5rem;
-}
+**Join the movement today and help bring clean water to people around the world. Every drop counts.**
 
-.mission{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-    font-size:1.1rem;
-}
+## Purpose
 
-/* Stats */
-.stats{
-    background:#FFC907;
-    padding:80px 8%;
-}
+The purpose of this landing page is to raise awareness about the global water crisis and inspire action. Through compelling visuals, educational content, and a clear call to action, the page encourages visitors to support Charity: Water's efforts to provide sustainable clean water solutions.
 
-.stats-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    text-align:center;
-}
+## Technologies Used
 
-.stat h3{
-    font-size:3rem;
-    color:#003366;
-}
+* HTML5
+* CSS3
+* JavaScript
+* Responsive Web Design Principles
 
-.stat p{
-    font-weight:bold;
-}
+## What I Learned
 
-/* Gallery */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
+Through this project, I learned how visual storytelling, branding, and user experience design can work together to support a nonprofit organization's mission. I also gained experience creating a landing page that informs, inspires, and motivates users to take action for a meaningful cause.
 
-.gallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:10px;
-}
+## Acknowledgments
 
-/* Call To Action */
-.cta{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:100px 8%;
-}
+This project was inspired by Charity: Water and utilizes photography, branding elements, and messaging concepts from the organization's publicly available resources. Their commitment to transparency and global impact served as the foundation for this design.
 
-.cta h2{
-    color:white;
-    margin-bottom:20px;
-}
-
-.cta-btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#FFC907;
-    color:black;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-/* Footer */
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-@media(max-width:768px){
-    .hero h1{
-        font-size:2.5rem;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-    <div class="logo">charity: water</div>
-    <a href="#" class="nav-btn">Donate</a>
-</nav>
-
-<section class="hero">
-    <h1>Clean Water Changes Everything</h1>
-    <p>
-        703 million people still live without access to clean and safe drinking water.
-        Together, we can change that.
-    </p>
-    <a href="#" class="hero-btn">Make an Impact</a>
-</section>
-
-<section class="section">
-    <h2>Why Water Matters</h2>
-    <p class="mission">
-        Access to clean water improves health, education, and economic opportunity.
-        Every donation helps fund sustainable water projects in communities around the world.
-    </p>
-</section>
-
-<section class="stats">
-    <div class="stats-container">
-        <div class="stat">
-            <h3>703M</h3>
-            <p>People Need Clean Water</p>
-        </div>
-
-        <div class="stat">
-            <h3>100%</h3>
-            <p>Public Donations Fund Projects</p>
-        </div>
-
-        <div class="stat">
-            <h3>29</h3>
-            <p>Countries Served</p>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Stories of Change</h2>
-
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Clean Water">
-        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Community">
-        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" alt="Children">
-    </div>
-</section>
-
-<section class="cta">
-    <h2>Your Gift Creates Lasting Change</h2>
-    <p>
-        Every dollar helps bring clean, safe water to people who need it most.
-    </p>
-
-    <a href="#" class="cta-btn">Donate Today</a>
-</section>
-
-<footer>
-    <p>© 2026 charity: water Inspired Student Project</p>
-</footer>
-
-</body>
-</html>
 ```
 
