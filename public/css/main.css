@@ -31,7 +31,7 @@ nav{
 .logo{
     font-size:1.8rem;
     font-weight:bold;
-    color:#003366;
+    color:#0f4c52;
     text-transform:uppercase;
     letter-spacing:1px;
 }
@@ -39,8 +39,8 @@ nav{
 .nav-btn,
 .hero-btn,
 .cta-btn{
-    background:#FFC907;
-    color:#000;
+    background:#2ec4b6;
+    color:#042a2b;
     padding:14px 30px;
     text-decoration:none;
     border-radius:999px;
@@ -52,12 +52,12 @@ nav{
 .hero-btn:hover,
 .cta-btn:hover{
     transform:translateY(-2px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
 }
 
 .hero{
     min-height:80vh;
-    background:linear-gradient(180deg,rgba(0,51,102,.76),rgba(0,51,102,.76)), url('/images/charitywater/charity-watch-BDZG6xjJ.jpg');
+    background:linear-gradient(180deg,rgba(18,98,125,.82),rgba(18,98,125,.82)), url('/images/charitywater/charity-watch-BDZG6xjJ.jpg');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -75,7 +75,7 @@ nav{
     letter-spacing:2px;
     font-size:.95rem;
     margin-bottom:18px;
-    color:#ffd85d;
+    color:#a2f0e5;
 }
 
 .hero h1{
@@ -88,7 +88,7 @@ nav{
     max-width:680px;
     margin-bottom:36px;
     font-size:1.15rem;
-    color:#f3f5f8;
+    color:#d9eff2;
 }
 
 .section{
@@ -97,7 +97,7 @@ nav{
 
 .section h2{
     text-align:center;
-    color:#003366;
+    color:#0d5f5d;
     margin-bottom:24px;
     font-size:2.8rem;
 }
@@ -126,7 +126,7 @@ nav{
 .mission-card h3{
     margin-bottom:14px;
     font-size:1.35rem;
-    color:#003366;
+    color:#0d5f5d;
 }
 
 .mission-card p{
@@ -154,8 +154,8 @@ nav{
 }
 
 .stats{
-    background:#FFC907;
-    color:#003366;
+    background:#1aa391;
+    color:#f5fbfb;
     padding:80px 8%;
 }
 
@@ -183,7 +183,7 @@ nav{
 }
 
 .cta{
-    background:#003366;
+    background:#0a5f5a;
     color:white;
     text-align:center;
     padding:100px 8%;
@@ -256,8 +256,8 @@ nav{
 }
 
 .subscribe-form input:focus{
-    border-color:#003366;
-    box-shadow:0 0 0 4px rgba(0,51,102,0.12);
+    border-color:#2ec4b6;
+    box-shadow:0 0 0 4px rgba(46,196,182,0.18);
 }
 
 .nav-group{
@@ -267,7 +267,7 @@ nav{
 }
 
 .nav-link{
-    color:#003366;
+    color:#0f4c52;
     text-decoration:none;
     font-weight:700;
 }
