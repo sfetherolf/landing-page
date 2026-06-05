@@ -21,7 +21,7 @@ html {
 body {
   line-height: 1.6;
   color: var(--dark);
-  background: #f8fbfd;
+  background: #eaf5fb;
 }
 
 img {
@@ -30,13 +30,13 @@ img {
 }
 
 nav {
-  background: var(--white);
+  background: var(--blue);
   padding: 18px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(46, 46, 46, 0.06);
+  box-shadow: 0 20px 50px rgba(46, 46, 46, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -45,7 +45,7 @@ nav {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--dark);
+  color: var(--white);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -58,34 +58,48 @@ nav {
 }
 
 .nav-link {
-  color: var(--dark);
+  color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
   font-weight: 700;
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(119, 168, 187, 0.08);
-  transition: background 0.2s ease, color 0.2s ease;
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .nav-link:hover {
   color: var(--white);
-  background: var(--blue);
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
 }
 
 .nav-btn,
-.hero-btn,
 .cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--yellow);
+  background: linear-gradient(90deg, #ffe45a, #ffc907);
   color: var(--dark);
   padding: 14px 30px;
   text-decoration: none;
   border-radius: 999px;
   font-weight: 800;
-  box-shadow: 0 12px 30px rgba(255, 201, 7, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 12px 30px rgba(255, 201, 7, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  color: var(--dark);
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .nav-btn:hover,
@@ -93,14 +107,7 @@ nav {
 .cta-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 35px rgba(255, 201, 7, 0.28);
-  background: #ffe45a;
-}
-
-.nav-btn:hover,
-.hero-btn:hover,
-.cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 35px rgba(255, 201, 7, 0.22);
+  filter: brightness(1.03);
 }
 
 .hero {
@@ -144,7 +151,7 @@ nav {
 
 .section {
   padding: 80px 8%;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(46, 46, 46, 0.08);
 }
 
@@ -198,11 +205,12 @@ nav {
 }
 
 .value-card {
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 28px;
   min-height: 220px;
+  color: var(--dark);
 }
 
 .value-card h3 {
@@ -211,11 +219,11 @@ nav {
 }
 
 .value-card p {
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(46, 46, 46, 0.82);
   line-height: 1.75;
 }
 .impact-section {
-  background: var(--white);
+  background: #dceff8;
 }
 
 .impact-grid {
@@ -226,11 +234,11 @@ nav {
 }
 
 .impact-card {
-  background: var(--light);
-  border-radius: 18px;
-  padding: 30px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px;
   box-shadow: 0 20px 40px rgba(46, 46, 46, 0.08);
-  border-left: 5px solid var(--yellow);
+  border-left: 6px solid var(--yellow);
 }
 
 .impact-card h3 {
@@ -264,7 +272,7 @@ nav {
 }
 
 .stories-section {
-  background: var(--white);
+  background: #d5e8f3;
 }
 
 .story-grid {
@@ -275,10 +283,11 @@ nav {
 }
 
 .story-card {
-  background: var(--light);
+  background: var(--white);
   border-radius: 18px;
-  padding: 30px;
-  box-shadow: 0 20px 40px rgba(46, 46, 46, 0.08);
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(46, 46, 46, 0.1);
+  border-top: 5px solid var(--yellow);
 }
 
 .story-card h3 {
@@ -317,7 +326,7 @@ nav {
 }
 
 .gallery-section {
-  background: linear-gradient(180deg, rgba(119, 168, 187, 0.08), rgba(255, 255, 255, 0.95));
+  background: #e7f3fb;
 }
 
 .gallery {
@@ -332,6 +341,7 @@ nav {
   height: 320px;
   object-fit: cover;
   border-radius: 18px;
+  border: 4px solid var(--white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
