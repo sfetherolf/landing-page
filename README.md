@@ -126,24 +126,5 @@ Follow Charity: Water on social media for updates and project stories.
 
 © 2026 Charity: Water Landing Page Project
 
----
-
-## Brand Colors
-
-### Primary Colors
-
-* Charity Yellow: #FFC907
-* White: #FFFFFF
-
-### Secondary Colors
-
-* Light Blue: #77A8BB
-* Dark Gray: #2E2E2E
-
-### Suggested Fonts
-
-* Proxima Nova (Brand Font)
-* Arial (Fallback)
-* Sans-serif
 
 
