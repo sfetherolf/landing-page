@@ -3,120 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>charity: water | Clean water changes everything</title>
+  <title>Charity: Water Landing Page</title>
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
   <nav>
     <div class="logo">charity: water</div>
     <div class="nav-group">
-      <a class="nav-link" href="#subscribe">Get Updates</a>
-      <a class="nav-btn" href="#donate">Donate Now</a>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#mission">Mission</a>
+      <a class="nav-link" href="#impact">Impact</a>
+      <a class="nav-link" href="#gallery">Gallery</a>
+      <a class="nav-btn" href="#donate">Donate</a>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" id="home">
     <div class="hero-copy">
-      <p class="eyebrow">A world with clean water for all</p>
-      <h1>Help communities thrive with clean water</h1>
-      <p>Support clean water projects that bring health, hope, and opportunity to communities in need.</p>
-      <a class="hero-btn" href="#donate">Support Clean Water</a>
+      <p class="eyebrow">Charity: Water</p>
+      <h1>Clean Water Changes Everything</h1>
+      <p>Millions of people around the world still lack access to clean and safe drinking water. Together, we can help provide sustainable water solutions that improve health, education, and opportunity.</p>
+      <a class="hero-btn" href="#donate">Donate Now</a>
     </div>
   </header>
 
-  <% if (subscribed === '1') { %>
-    <div class="alert success">Thank you! You’re now signed up for water project updates.</div>
-  <% } else if (subscribed === '0') { %>
-    <div class="alert error">Please enter a valid email address to receive updates.</div>
-  <% } %>
+  <section id="mission" class="section mission-section">
+    <h2>Bringing Clean Water to Communities in Need</h2>
+    <p>Charity: Water is a nonprofit organization dedicated to providing clean and safe drinking water to people living in developing countries. Through community-led and sustainable water projects, the organization works to create lasting impact for families around the world.</p>
+  </section>
 
-  <section class="section mission-section">
-    <h2>Our Purpose</h2>
-    <div class="mission">
-      <p>Every person deserves access to clean water. Together we fund sustainable, community-led projects that deliver safe water and transform lives.</p>
+  <section id="impact" class="section impact-section">
+    <h2>More Than Just Water</h2>
+    <div class="impact-grid">
+      <article class="impact-card">
+        <h3>Health</h3>
+        <p>Access to clean water helps prevent waterborne diseases and improves overall community health.</p>
+      </article>
+      <article class="impact-card">
+        <h3>Education</h3>
+        <p>Children spend less time collecting water and more time in school.</p>
+      </article>
+      <article class="impact-card">
+        <h3>Opportunity</h3>
+        <p>Reliable water sources allow communities to invest time in work, agriculture, and economic growth.</p>
+      </article>
     </div>
-    <div class="mission-cards">
-      <article class="mission-card">
-        <h3>Water for Health</h3>
-        <p>Clean water reduces disease and helps children stay healthy so they can learn and grow.</p>
-      </article>
-      <article class="mission-card">
-        <h3>Community Power</h3>
-        <p>We work with local leaders so water systems are owned and maintained by the people who use them.</p>
-      </article>
-      <article class="mission-card">
-        <h3>Transparent Giving</h3>
-        <p>Your donation is directed to water projects, with full visibility into every dollar’s impact.</p>
-      </article>
+
+    <div class="impact-summary">
+      <h2>Every Donation Makes a Difference</h2>
+      <ul class="impact-list">
+        <li>100% of public donations fund water projects.</li>
+        <li>Sustainable solutions are built to serve communities long-term.</li>
+        <li>Project locations and results are shared transparently with supporters.</li>
+      </ul>
     </div>
   </section>
 
-  <section class="section gallery-section">
-    <h2>Field Stories</h2>
+  <section id="gallery" class="section gallery-section">
+    <h2>Real Stories. Real Change.</h2>
     <div class="gallery">
-      <img src="/images/charitywater/charity-watch-BDZG6xjJ.jpg" alt="People around a clean water source">
-      <img src="/images/charitywater/candid-DD7EBozV.jpg" alt="Children holding water containers">
-      <img src="/images/charitywater/charity-navigator-Caxpe_EG.jpg" alt="Volunteers working with a community">
-      <img src="/images/charitywater/bbb-BCol5qPK.jpg" alt="Fresh water infrastructure in a village">
+      <img src="/images/charitywater/charity-watch-BDZG6xjJ.jpg" alt="Community learning about a new water source">
+      <img src="/images/charitywater/candid-DD7EBozV.jpg" alt="Children collecting clean water">
+      <img src="/images/charitywater/charity-navigator-Caxpe_EG.jpg" alt="Volunteers working with a local partner">
+      <img src="/images/charitywater/bbb-BCol5qPK.jpg" alt="Community water system infrastructure">
     </div>
   </section>
 
-  <section class="stats">
-    <div class="stats-container">
-      <div class="stat">
-        <h3>703M</h3>
-        <p>People still need access to clean drinking water.</p>
-      </div>
-      <div class="stat">
-        <h3>100%</h3>
-        <p>Donations support sustainable wells and water systems.</p>
-      </div>
-      <div class="stat">
-        <h3>29</h3>
-        <p>Years of partnering with communities worldwide.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section subscribe-section" id="subscribe">
-    <h2>Stay connected</h2>
-    <p>Get stories, campaign updates, and volunteer opportunities delivered to your inbox.</p>
-    <form class="subscribe-form" action="/subscribe" method="post">
-      <input type="email" name="email" placeholder="Enter your email address" required>
-      <button type="submit" class="hero-btn">Subscribe</button>
-    </form>
-  </section>
-
-  <section class="cta" id="donate">
-    <h2>Take action for lasting water access</h2>
-    <p>Your gift builds wells, trains communities, and keeps water flowing for generations.</p>
-    <a class="cta-btn" href="https://www.charitywater.org/donate" target="_blank" rel="noopener">Donate now</a>
+  <section id="donate" class="section donate-section">
+    <h2>Be Part of the Solution</h2>
+    <p>Access to clean water transforms lives. Support projects that bring safe drinking water to communities around the world.</p>
+    <a class="cta-btn" href="https://www.charitywater.org/donate" target="_blank" rel="noopener">Give Clean Water Today</a>
+    <p class="donate-note">Every contribution helps fund sustainable water solutions and creates opportunities for healthier, stronger communities.</p>
   </section>
 
   <footer>
-    <p>charity: water | Driven by clean water impact.</p>
+    <div class="footer-copy">
+      <div>
+        <h3>Charity: Water</h3>
+        <p>Learn more about the global water crisis and how clean water can change lives.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#impact">Impact</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#donate">Donate</a>
+      </div>
+    </div>
+    <p>© 2026 Charity: Water Landing Page Project for readme</p>
   </footer>
 </body>
 </html>
-            Countries Served
-
-        
-
-    
-
-    Stories of Change
-
-    
-        ![Clean Water](https://images.unsplash.com/photo-1509099836639-18ba1795216d)
-        ![Community](https://images.unsplash.com/photo-1488521787991-ed7bbaae773c)
-        ![Children](https://images.unsplash.com/photo-1517486808906-6ca8b3f04846)
-    
-
-    Your Gift Creates Lasting Change
-    
-        Every dollar helps bring clean, safe water to people who need it most.
-    
-
-    [Donate Today](#)
-
-    © 2026 charity: water Inspired Student Project
