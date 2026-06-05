@@ -1,179 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Charity Water Landing Page</title>
-    <meta property="og:title" content="Charity Water" />
-    <meta property="og:description" content="Join the mission to bring safe, clean drinking water to communities around the world." />
-    <meta property="og:image" content="/images/charitywater/charity-navigator-Caxpe_EG.jpg" />
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">Charity Water</div>
-        <nav class="nav-links">
-          <a href="#mission">Mission</a>
-          <a href="#impact">Impact</a>
-          <a href="#projects">Projects</a>
-        </nav>
-        <a class="button button-primary" href="#donate">Donate</a>
-      </div>
-    </header>
+    <title>Charity: Water - Every Drop Changes Lives</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">Clean water changes everything</span>
-            <h1>Bring safe drinking water to communities in need.</h1>
-            <p>
-              Every donation helps build wells, filters, and sustainable systems that transform lives.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#donate">Donate Now</a>
-              <a class="button button-secondary" href="#impact">See Impact</a>
-            </div>
-          </div>
-          <div class="hero-media">
-            <img class="hero-image" src="/images/charitywater/candid-DD7EBozV.jpg" alt="Community enjoying fresh water" />
-          </div>
+        body{
+            line-height:1.6;
+            color:#1a1a1a;
+        }
+
+        /* Navigation */
+        nav{
+            background:#ffffff;
+            padding:20px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo{
+            font-size:1.8rem;
+            font-weight:bold;
+            color:#003366;
+        }
+
+        .nav-btn{
+            background:#FFC907;
+            color:#000;
+            padding:12px 24px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        /* Hero Section */
+        .hero{
+            background:linear-gradient(rgba(0,51,102,.75),rgba(0,51,102,.75)),
+            url('https://images.unsplash.com/photo-1542810634-71277d95dcbb');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:120px 8%;
+        }
+
+        .hero h1{
+            font-size:3.5rem;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin:auto;
+            font-size:1.2rem;
+            margin-bottom:30px;
+        }
+
+        .hero-btn{
+            display:inline-block;
+            background:#FFC907;
+            color:#000;
+            padding:15px 35px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+            font-size:1.1rem;
+        }
+
+        /* Mission Section */
+        .section{
+            padding:80px 8%;
+        }
+
+        .section h2{
+            text-align:center;
+            color:#003366;
+            margin-bottom:30px;
+            font-size:2.5rem;
+        }
+
+        .mission{
+            text-align:center;
+            max-width:900px;
+            margin:auto;
+            font-size:1.1rem;
+        }
+
+        /* Stats */
+        .stats{
+            background:#FFC907;
+            padding:80px 8%;
+        }
+
+        .stats-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+            text-align:center;
+        }
+
+        .stat h3{
+            font-size:3rem;
+            color:#003366;
+        }
+
+        .stat p{
+            font-weight:bold;
+        }
+
+        /* Gallery */
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        /* Call To Action */
+        .cta{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:100px 8%;
+        }
+
+        .cta h2{
+            color:white;
+            margin-bottom:20px;
+        }
+
+        .cta-btn{
+            display:inline-block;
+            margin-top:20px;
+            background:#FFC907;
+            color:black;
+            text-decoration:none;
+            padding:15px 35px;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        /* Footer */
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">charity: water</div>
+        <a href="#" class="nav-btn">Donate</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Clean Water Changes Everything</h1>
+        <p>703 million people still live without access to clean and safe drinking water. Together, we can change that.</p>
+        <a href="#" class="hero-btn">Make an Impact</a>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section">
+        <h2>Why Water Matters</h2>
+        <div class="mission">
+            <p>Access to clean water improves health, education, and economic opportunity. Every donation helps fund sustainable water projects in communities around the world.</p>
         </div>
-      </section>
+    </section>
 
-      <section class="section gallery-section">
-        <div class="container">
-          <h2>Stories from the field</h2>
-          <div class="gallery-grid">
-            <div class="gallery-card">
-              <img src="/images/charitywater/charity-navigator-Caxpe_EG.jpg" alt="Charity Water field worker" />
-              <p>Field teams delivering sustainable clean water solutions.</p>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat">
+                <h3>703M</h3>
+                <p>People Need Clean Water</p>
             </div>
-            <div class="gallery-card">
-              <img src="/images/charitywater/candid-DD7EBozV.jpg" alt="Community enjoying fresh water" />
-              <p>Communities gaining access to fresh drinking water.</p>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Public Donations Fund Projects</p>
             </div>
-            <div class="gallery-card">
-              <img src="/images/charitywater/charity-watch-BDZG6xjJ.jpg" alt="Tracking water project progress" />
-              <p>Transparent project tracking with real-time updates.</p>
+            <div class="stat">
+                <h3>29</h3>
+                <p>Countries Served</p>
             </div>
-            <div class="gallery-card">
-              <img src="/images/charitywater/bbb-BCol5qPK.jpg" alt="Support clean water impact" />
-              <p>Support that powers long-term water access and health.</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="mission" class="section mission-section">
-        <div class="container section-grid">
-          <div>
-            <h2>Our Mission</h2>
-            <p>
-              Charity Water supports clean water projects in communities that need them most. We focus on long-term sustainability, local partnerships, and measurable outcomes.
-            </p>
-          </div>
-          <div class="mission-cards">
-            <div class="card">
-              <h3>Community-led</h3>
-              <p>Every project is guided by local leaders to ensure lasting success.</p>
-            </div>
-            <div class="card">
-              <h3>Transparency</h3>
-              <p>Follow each project from funding to completion with clear reporting.</p>
-            </div>
-            <div class="card">
-              <h3>Impact-driven</h3>
-              <p>Safe water improves health, education, and economic opportunity.</p>
-            </div>
-          </div>
+    <!-- Gallery Section -->
+    <section class="section">
+        <h2>Stories of Change</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Clean Water">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Community">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" alt="Children">
         </div>
-      </section>
+    </section>
 
-      <section id="impact" class="section impact-section">
-        <div class="container">
-          <h2>Impact by the numbers</h2>
-          <div class="stats-grid">
-            <div class="stat-card">
-              <strong>5M+</strong>
-              <span>People served</span>
-            </div>
-            <div class="stat-card">
-              <strong>2,500+</strong>
-              <span>Projects completed</span>
-            </div>
-            <div class="stat-card">
-              <strong>100%</strong>
-              <span>Donor funding goes to water</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Your Gift Creates Lasting Change</h2>
+        <p>Every dollar helps bring clean, safe water to people who need it most.</p>
+        <a href="#" class="cta-btn">Donate Today</a>
+    </section>
 
-      <section id="projects" class="section projects-section">
-        <div class="container">
-          <h2>How it works</h2>
-          <div class="project-steps">
-            <div class="step">
-              <h3>1. Support a project</h3>
-              <p>Choose a campaign and make a gift that goes directly to clean water solutions.</p>
-            </div>
-            <div class="step">
-              <h3>2. Track progress</h3>
-              <p>Get updates and see where your donations fund real wells and filters.</p>
-            </div>
-            <div class="step">
-              <h3>3. Celebrate change</h3>
-              <p>Watch communities gain health, dignity, and a brighter future.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="donate" class="section donate-section">
-        <div class="container donate-card">
-          <h2>Ready to make a difference?</h2>
-          <p>Give today and help deliver clean water for families, schools, and villages around the world.</p>
-          <a class="button button-primary" href="#">Give Now</a>
-        </div>
-      </section>
-
-      <section class="section cta-section">
-        <div class="container cta-card">
-          <div class="cta-copy">
-            <h2>Take action today</h2>
-            <p>Join our community — get updates on projects and opportunities to help.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="button button-primary button-xl" href="#donate">Donate Now</a>
-            <a class="button button-secondary button-xl" href="#subscribe">Join Updates</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="subscribe" class="section subscribe-section">
-        <div class="container">
-          <% if (typeof subscribed !== 'undefined' && subscribed == '1') { %>
-            <div class="subscribe-message success">Thanks — you're subscribed! Check your inbox for updates.</div>
-          <% } else if (typeof subscribed !== 'undefined' && subscribed == '0') { %>
-            <div class="subscribe-message error">Please enter a valid email address and try again.</div>
-          <% } %>
-
-          <form class="subscribe-form" action="/subscribe" method="POST">
-            <div class="form-row">
-              <input id="email" name="email" type="email" placeholder="Your email address" required />
-              <button class="button button-primary" type="submit">Join Updates</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© 2026 Charity Water. Built with purpose.</span>
-      </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 charity: water Inspired Student Project</p>
     </footer>
-  </body>
+</body>
 </html>
