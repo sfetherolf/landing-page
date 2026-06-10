@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--yellow);
 }
 
 * {
@@ -19,9 +20,10 @@ html {
 }
 
 body {
+  min-height: 100vh;
   line-height: 1.6;
   color: var(--dark);
-  background: #eaf5fb;
+  background: var(--yellow);
 }
 
 img {
